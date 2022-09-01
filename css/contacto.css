@@ -1,0 +1,12 @@
+.contact {
+  background-color: var(--primary-color);
+  color: var(--text-color-inverse);
+}
+
+.contact-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 30px;
+  margin: 25px;
+}

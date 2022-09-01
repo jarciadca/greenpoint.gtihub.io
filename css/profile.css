@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Noto+Sans:wght@700&display=swap');
+
+.profile-info {
+  marging-bottom: 25px;
+  padding: 20px;
+}
+
+.profile-img {
+  width: 100%;
+  max-width: 300px;
+}
+
+.profile-img-section {
+  position: relative;
+  /*enviar hacia adelante*/
+  z-index: -2;
+}
+
+.profile-img-line {
+  background-color: var(--secundary-color);
+  height: 15px;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  max-width: 300px;
+
+}
+
+.profile {
+  text-align: center;
+}
+
+.profile-title {
+  font-size: 35px;
+  font-weight: bold;
+  margin: 0;
+  color: var(--primary-color);
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.profile-details {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.3;
+  max-width: 450px;
+  /*al seleccionar los margenes auto ya queda centrado*/
+  margin: 20px auto;
+  /*padding-left: 20px;*/
+}
+
+.profile-btn {
+  background-color: var(--primary-color);
+  color: var(--text-color-inverse);
+  border: none;
+  font-size: 20px;
+  /*10px de padding superior e inferior*/
+  padding: 0.5em 1em;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.profile-img {
+  background-color: red;
+  width: 200px;
+  height: 200px;
+  /*
+  animation-name: myframe;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-direction: forwards;
+  animation-play-state: running;
+  */
+}
+
+@keyframes myframe {
+  from {
+    height: 200px;
+  }
+
+  to {
+    height: 500px;
+  }
+}
+
+
+.profile-btn:hover {
+  filter:brightness(130%);
+}
+
+
+@media (min-width: 950px) {
+  .profile-info {
+    marging-bottom: 0px;
+  }
+
+  .profile-img {
+    width: 100%;
+    max-width: 350px;
+    /*invertir imagen*/
+    transform: scaleX(-1);
+  }
+
+  .profile-img-section {
+
+  }
+
+  .profile-img-line {
+    background-color: var(--secundary-color);
+    height: 15px;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    max-width: 100%;
+
+
+
+  }
+
+  .profile {
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    max-width: 980px;
+    /* izq derecha arriba y abajo */
+    margin: 0 auto;
+    /* unir hijos en forma vertical */
+    align-items: center;
+  }
+
+  .profile-title {
+    font-size: 40px;
+  }
+
+  .profile-details {
+    font-size: 20px;
+    /*al seleccionar los margenes auto ya queda centrado*/
+    margin: 30px 0;
+    /*padding-left: 20px;*/
+  }
+
+  .profile-btn {
+    font-size: 20px;
+  }
+
+  .profile-btn:hover {
+    filter:brightness(130%);
+  }
+
+  .profile-img {
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    /*
+    animation-name: myframe;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-direction: forwards;
+    animation-play-state: running;
+    */
+  }
+
+  @myframe {
+    from {
+      height: 200px;
+    }
+
+    to {
+      height: 500px;
+    }
+  }
+
+
+}

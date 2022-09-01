@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joel Arcia</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <script src="https://kit.fontawesome.com/1c5fa7791c.js" crossorigin="anonymous"></script>
+  <!--load all Font Awesome styles -->
+  <link href="./fontawesome/css/all.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/navbar.css">
+  <link rel="stylesheet" href="./css/navbar2.css">
+  <link rel="stylesheet" href="./css/profile.css">
+  <link rel="stylesheet" href="./css/skills.css">
+  <link rel="stylesheet" href="./css/experience.css">
+  <link rel="stylesheet" href="./css/Contacto.css">
+  <link rel="stylesheet" href="./css/grid_footer.css">
+  <link rel="stylesheet" href="./js/node_modules/swiper/swiper-bundle.min.css">
+  <style>
+
+
+  .swiper {
+          width: 100%;
+          height: 100%;
+        }
+
+        .swiper-slide {
+          text-align: center;
+          font-size: 18px;
+          background: #fff;
+
+          /* Center slide text vertically */
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: -webkit-flex;
+          display: flex;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          -webkit-justify-content: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          -webkit-align-items: center;
+          align-items: center;
+        }
+
+        .swiper-slide img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 20px;
+        }
+
+        .swiper .swiper-button-prev,
+        .swiper .swiper-button-next {
+          --swiper-navigation-size: 20px;
+          background-color: var(--primary-color);
+          height: 70px;
+          width: 50px;
+          margin-top: -35px;
+
+          opacity: 0;
+          transition: opacity 1s;
+          color: white;
+        }
+
+        .swiper .swiper-button-prev {
+          border-radius: 0 65px 65px 0;
+          left: -10px;
+        }
+
+        .swiper .swiper-button-next {
+          border-radius: 65px 0 0 65px;
+          right: -10px;
+        }
+
+        .swiper:hover .swiper-button-prev,
+        .swiper:hover .swiper-button-next {
+          opacity: 0.7;
+        }
+
+        .swiper-wrapper
+        {
+          transition-timing-function: linear;
+          padding-bottom: 40px;
+
+        }
+
+        .ir-arriba {
+	        display:none;
+	        padding: 0px 10px 10px 10px;
+	        background: var(--secundary-color);
+	        font-size:30px;
+	        color: var(--primary-color);
+	        cursor:pointer;
+        	position: fixed;
+	        bottom:20px;
+        	right:20px;
+          border-radius: 20px;
+          height: 30px;
+          width: 20px;
+          text-align: center;
+          z-index: 100;
+          opacity: 0.8;
+}
+
+
+
+  </style>
+
+
+
+
+
+
+  <script defer src="./js/app.js"></script>
+  <script src="./js/jquery.js"></script>
+
+
+  <link rel="stylesheet" type="text/css" href="./js/node_modules/swiper/swiper-bundle.css">
+      <!-- Archivo Javascript para Swiper JS -->
+      <script type="text/javascript" src="./js/node_modules/swiper/swiper-bundle.js"></script>
+
+
+</head>
+<body>
+  <header class="topheader">
+    <nav class="topnav">
+<!--
+      <a href="#" class="logo">
+        <img
+          height="50"
+          width="50"
+          src="./img/youtube-picture.png"
+          alt="programador"
+        />
+        <div>
+          GREENPOINT
+        </div>
+      </a>
+-->
+      <div class="logotipo">
+        <div class="logotipo1">Green</div>
+        <div class="logotipo2">Point</div>
+    </div>
+
+      <button class="open-menu" aria-label="Abrir menú">
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul class="menu">
+        <button class="close-menu" aria-label="Cerrar menú">
+          <i class="fas fa-times"></i>
+        </button>
+        <li><a href="#profile" class="selected">Perfil</a></li>
+        <li><a href="#experience">Experiencia</a></li>
+        <li><a href="#skills">Habilidades</a></li>
+        <li><a href="#carrusel">Carrusel</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <header class="header">
+    <nav class="nav">
+      <a href="#" class="logo nav-link"></a>
+      <button class="nav-toggle" aria-label="Abrir menú">
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul class="nav-menu">
+        <button class="nav-toggle-cerrar" aria-label="Cerrar menú">
+          <i class="fas fa-times"></i>
+        </button>
+        <li class="nav-menu-item">
+          <a href="#profile" class="nav-menu-link nav-link selectedd">Perfil</a>
+        </li>
+        <li class="nav-menu-item">
+          <a href="#experience" class="nav-menu-link nav-link">Experiencia</a>
+        </li>
+        <li class="nav-menu-item">
+          <a href="#skills" class="nav-menu-link nav-link">Habilidades</a>
+        </li>
+        <li class="nav-menu-item">
+          <a href="#carrusel" class="nav-menu-link nav-link">Carrusel</a>
+        </li>
+        <li class="nav-menu-item">
+          <a href="#contact" class="nav-menu-link nav-link">Contacto</a>
+        </li>
+
+
+
+      </ul>
+    </nav>
+  </header>
+
+<div class="horizontal-padding vertical-padding">
+  <section class="profile" id="profile">
+    <div class="profile-info">
+      <h1 class="profile-title" >Hola, soy <br />Joel Arcia</h1>
+      <p class="profile-details">Ingeniero de software, desarrollador backend y frontend con más
+         de 10 años de experiencia en varios lenguajes de programación y
+         tecnologías.
+      </p>
+      <button class="profile-btn">
+        Descargar CV
+      </button>
+     </div>
+    <span class="profile-img-section">
+      <img class="profile-img" src="./img/imagen-company.png" alt="programador" />
+      <div class="profile-img-line"></div>
+    </span>
+  </section>
+  </div>
+
+<section class="experiences"  id="experience">
+  <h2 class="experiences-title">Experiencia</h2>
+  <img src="./img/wave-up.svg" alt="division arriba"  class="wave">
+  <div class="experiences-body">
+
+    <div class="experiences-grid">
+
+      <div class="empty"></div>
+      <div class="line"></div>
+
+      <div class="experience">
+        <div>
+          <div class="experience-date">2020-2021</div>
+          <div class="experience-company">Constellation Agency</div>
+          <div class="experience-position">Senior Software Development</div>
+          <div class="experience-description">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+            est laborum.
+          </div>
+        </div>
+       </div>
+       <div class="experience experience-left">
+         <div>
+           <div class="experience-date">2020-2021</div>
+           <div class="experience-company">Constellation Agency</div>
+           <div class="experience-position">Senior Software Development</div>
+           <div class="experience-description">
+             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+             veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+             commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+             velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+             cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+             est laborum.
+           </div>
+         </div>
+        </div>
+
+        <div class="line"></div>
+        <div class="empty"></div>
+        <div class="empty"></div>
+        <div class="line"></div>
+
+        <div class="experience">
+          <div>
+            <div class="experience-date">2020-2021</div>
+            <div class="experience-company">Constellation Agency</div>
+            <div class="experience-position">Senior Software Development</div>
+            <div class="experience-description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+              commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+              cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+              est laborum.
+            </div>
+          </div>
+         </div>
+         <div class="experience experience-left">
+           <div>
+             <div class="experience-date">2020-2021</div>
+             <div class="experience-company">Constellation Agency</div>
+             <div class="experience-position">Senior Software Development</div>
+             <div class="experience-description">
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+               veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+               commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+               velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+               cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+               est laborum.
+             </div>
+           </div>
+          </div>
+
+    </div>
+  </div>
+  <img src="./img/wave-bottom.svg" alt="division debajo" class="wave wave_bottom">
+</section>
+
+
+<div class="horizontal-padding vertical-padding">
+  <section class="skills"  id="skills">
+    <h2 class="skills-title">Habilidades</h2>
+    <ul class="skills-list">
+      <li class="skills-skill">CSS</li>
+      <li class="skills-skill">HTML</li>
+      <li class="skills-skill">Node.js</li>
+      <li class="skills-skill">React.js</li>
+      <li class="skills-skill">TypeScript</li>
+      <li class="skills-skill">JavaScript</li>
+      <li class="skills-skill">Symfony</li>
+    </ul>
+    <br />
+    <br />
+    <br />
+    <br />
+
+  </section>
+</div>
+
+  <!-- Slider main container -->
+<div class="horizontal-padding vertical-padding" id="carrusel">
+  <h2 class="contact-title">Carrusel</h2>
+</div>
+
+<div class="swiper mySwiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide"><img src="./img/naranja_1.jpg" /></div>
+    <div class="swiper-slide"><img src="./img/naranja_2.jpg" /></div>
+    <div class="swiper-slide"><img src="./img/naranja_3.jpg" /></div>
+    <div class="swiper-slide"><img src="./img/naranja_4.jpg" /></div>
+    <div class="swiper-slide"><img src="./img/naranja_5.jpg" /></div>
+    <div class="swiper-slide"><img src="./img/naranja_6.jpg" /></div>
+    <div class="swiper-slide"><img src="./img/naranja_7.jpg" /></div>
+    <div class="swiper-slide"><img src="./img/naranja_8.jpg" /></div>
+    <div class="swiper-slide"><img src="./img/naranja_9.jpg" /></div>
+    <div class="swiper-slide"><img src="./img/naranja_10.jpg" /></div>
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+  <!-- If we need scrollbar -->
+  <div class="swiper-scrollbar"></div>
+</div>
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+
+
+
+
+
+  <section class="contact vertical-padding"  id="contact">
+    <div class="grid-container">
+      <div class="clientes">
+        <h4>Para clientes</h4>
+        <ul class="contact-list">
+          <li>Video tutoriales</li>
+          <li>Descargas</li>
+          <li>FAQ</li>
+          <li>Blog</li>
+        </ul>
+      </div>
+      <div class="nosotros">
+        <h4>Sobre nosotros</h4>
+        <ul class="contact-list">
+          <li>Quiénes somos</li>
+          <li>Mapa del Sitio</li>
+          <li>Afiliados</li>
+          <li>Campo de acción</li>
+        </ul>
+      </div>
+      <div class="datos">
+        <div class="datos_contacto"><h4>Datos de contacto</h4></div>
+        <ul class="contact-list">
+          <li>Dirección</li>
+          <li>Teléfono</li>
+          <li>e-mail</li>
+          <li>facebook</li>
+          <li>Twiter</li>
+        </ul>
+      </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+
+  </section>
+  <span class="ir-arriba icon-arrow-up2">↑</span>
+
+  <script>
+  $(document).ready(function(){
+
+    $('.ir-arriba').click(function(){
+      $('body, html').animate({
+        scrollTop: '0px'
+      }, 300);
+    });
+
+    $(window).scroll(function(){
+      if( $(this).scrollTop() > 0 ){
+        $('.ir-arriba').slideDown(300);
+      } else {
+        $('.ir-arriba').slideUp(300);
+      }
+    });
+
+  });
+
+  </script>
+  <script>
+
+
+
+  var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 'auto',
+        spaceBetween: 10,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        loop: true,
+        speed: 1000,
+        autoplay: {
+          delay: 1,
+          pauseOnMouseEnter: true,
+          disableOnInteraction: false,
+          reverseDirection: true,
+          //waitForTransition: true,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        scrollbar: {
+          el: '.swiper-scrollbar',
+          draggable: true,
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 5,
+            spaceBetween: 50,
+          },
+        },
+      });
+    </script>
+</body>
+</html>
