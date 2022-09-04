@@ -129,7 +129,7 @@
   /*display: none;*/
 
 
-@media (max-width: 950px) {
+  @media screen and (max-width: 950px){
   .topnav {
     padding: 10px 20px 10px 10px;
   }

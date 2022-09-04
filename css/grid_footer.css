@@ -69,7 +69,7 @@
 }
 
 /*disenho tablet*/
-@media (min-width: 600px) {
+@media screen and (min-width: 600px){
   .grid-container {
     /*grid-template-columns: 200px auto;
     grid-template-rows:100px 50px auto 100px;*/
@@ -103,7 +103,7 @@
 
 
 /*disenho escritorio*/
-@media (min-width: 900px) {
+@media screen and (min-width: 900px){
   .grid-container {
     /*justify-content: space-between;*/
 
